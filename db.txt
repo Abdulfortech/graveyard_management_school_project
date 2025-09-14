@@ -1,0 +1,154 @@
+/*********************
+	DATABASE DETAILES
+**********************/
+
+DATABASE NAME : nms
+DATABASE TYPE : MySQL
+DATABASE USERNAME : root
+DATABASE PASSWORD : 
+
+/********************* 
+	TABLES
+**********************/
+
+1. students
+2. admins
+3. sessions
+4. classes
+5. departments
+6. courses
+7. student_classes
+8. student_courses
+9. requests
+10. Mobilization
+
+
+*****************
+1. STUDENTS
+
+- student_id INT 10
+- reg VAR 100
+- fname VAR 100
+- lname VAR 100
+- gender VAR 100
+- state VAR 100
+- address VAR 100
+- class VAR 100
+- department VAR 100
+- phone VAR 100
+- email VAR 100
+- picture VAR 1000
+- password VAR 100
+- status INT 10
+- created_at TIMESTAMP 6
+- updated_at TIMESTAMP 6 
+
+
+*****************
+2. ADMINS
+
+- admin_id INT 10
+- fname VAR 100
+- lname VAR 100
+- email VAR 100
+- password VAR 100
+- status INT 10
+- created_at TIMESTAMP 6
+- updated_at TIMESTAMP 6 
+
+
+*****************
+3. SESSIONS
+
+- session_id INT 10
+- admin_id INT 10
+- title VAR 100
+- status INT 10
+- created_at TIMESTAMP 6
+- updated_at TIMESTAMP 6 
+
+
+*****************
+4. CLASSES
+
+- class_id INT 10
+- admin_id INT 10
+- title VAR 100
+- status INT 10
+- created_at TIMESTAMP 6
+- updated_at TIMESTAMP 6 
+
+
+*****************
+5. DEPARTMENTS
+
+- department_id INT 10
+- admin_id INT 10
+- code VAR 100
+- title VAR 100
+- status INT 10
+- created_at TIMESTAMP 6
+- updated_at TIMESTAMP 6 
+
+
+
+*****************
+6. COURSES
+
+- courses_id INT 10
+- admin_id INT 10
+- code VAR 100
+- title VAR 100
+- credit VAR 100
+- status INT 10
+- created_at TIMESTAMP 6
+- updated_at TIMESTAMP 6 
+
+
+********************
+7. STUDENT_CLASSES
+
+- sclass_id INT 10
+- student_id INT 10
+- class_id INT 10
+- session VAR 100
+- status INT 10
+- created_at TIMESTAMP 6
+- updated_at TIMESTAMP 6
+
+
+********************
+8. STUDENT_COURSES
+
+- scourse_id INT 10
+- student_id INT 10
+- sclass_id INT 10
+- course_id INT 10
+- semester VAR 100
+- status INT 10
+- created_at TIMESTAMP 6
+- updated_at TIMESTAMP 6  
+
+
+*****************
+8. REQUESTS
+
+- request_id INT 10
+- student_id INT 10
+- reg VAR 100
+- fname VAR 100
+- lname VAR 100
+- gender VAR 100
+- dob VAR 100
+- phone VAR 100
+- state VAR 100
+- course VAR 100
+- class VAR 100
+- gdate VAR 100
+- jamb VAR 100
+- cjamb VAR 100
+- serve VAR 100
+- militry VAR 100
+- status INT 10
+- created_at TIMESTAMP 6
+- updated_at TIMESTAMP 6 
